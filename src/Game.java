@@ -1,29 +1,28 @@
+import java.util.Scanner;
 
 public class Game {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("You are walking in the forest.");
+		Scanner myScanner;
+		myScanner = new Scanner(System.in);
 		
-		String myWeapon;
-		String myArmor;
+//		String playerName;
+//		
+//		System.out.println("Please enter your name:");
+//		
+//		playerName = myScanner.nextLine();
+//		
+//		System.out.println("Hello " + playerName);
 		
-		myWeapon = "Axe";
-		myArmor = "Leather Tunic";
+		int number;
 		
-		System.out.println("Your current weapon is " + myWeapon);
-		System.out.println("Your current armor is " + myArmor);
+		System.out.println("Please enter a number:");
 		
-		int yourHP;
-		yourHP = 10;
+		number = myScanner.nextInt();
 		
-		System.out.println("Your current HP is " + yourHP);
+		System.out.println("The number you typed is " + number);
 		
-		System.out.println("A monster attacked you and gave 4 damage!");
-		
-		yourHP = yourHP - 4;
-		
-		System.out.println("Your current HP is " + yourHP);
 	}
 
 }
